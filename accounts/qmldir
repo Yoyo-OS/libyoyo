@@ -1,2 +1,2 @@
-module Cutefish.Accounts
-plugin cutefishaccounts_qmlplugins
+module Yoyo.Accounts
+plugin yoyoaccounts_qmlplugins

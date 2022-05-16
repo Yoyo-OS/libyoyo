@@ -1,7 +1,7 @@
-Source: libcutefish
+Source: libyoyo
 Section: devel
 Priority: optional
-Maintainer: CutefishOS <support@cutefishos.com>
+Maintainer: YoyoOS <support@yoyoos.com>
 Build-Depends: cmake,
                debhelper (>= 9),
                extra-cmake-modules,
@@ -20,11 +20,11 @@ Build-Depends: cmake,
                qttools5-dev,
                qttools5-dev-tools
 Standards-Version: 4.5.0
-Homepage: https://cutefishos.com
+Homepage: https://yoyoos.com
 
-Package: libcutefish
+Package: libyoyo
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libkf5screen-bin
-Description: CutefishOS Library
+Description: YoyoOS Library

@@ -1,2 +1,2 @@
-module Cutefish.Mpris
-plugin cutefishmpris_qmlplugins
+module Yoyo.Mpris
+plugin yoyompris_qmlplugins

@@ -22,14 +22,14 @@ set(NETWORKMGR_SRCS
     qtdbusextended/dbusextendedpendingcallwatcher.cpp
 )
 
-add_library(cutefishmpris_qmlplugins SHARED ${NETWORKMGR_SRCS})
+add_library(yoyompris_qmlplugins SHARED ${NETWORKMGR_SRCS})
 
-target_link_libraries (cutefishmpris_qmlplugins
+target_link_libraries (yoyompris_qmlplugins
     Qt5::Core
     Qt5::Quick
     Qt5::Gui
     Qt5::DBus
 )
 
-install(TARGETS cutefishmpris_qmlplugins DESTINATION ${INSTALL_QMLDIR}/Cutefish/Mpris)
-install(FILES qmldir DESTINATION ${INSTALL_QMLDIR}/Cutefish/Mpris)
+install(TARGETS yoyompris_qmlplugins DESTINATION ${INSTALL_QMLDIR}/Yoyo/Mpris)
+install(FILES qmldir DESTINATION ${INSTALL_QMLDIR}/Yoyo/Mpris)

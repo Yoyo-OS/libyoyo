@@ -1,3 +1,3 @@
-module Cutefish.NetworkManagement
+module Yoyo.NetworkManagement
 
-plugin cutefishnm_qmlplugins
+plugin yoyonm_qmlplugins
