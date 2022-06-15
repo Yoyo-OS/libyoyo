@@ -34,7 +34,8 @@ else()
     message(FATAL_ERROR "qml directory cannot be detected.")
 endif()
 # -------------------------------------------
-
+add_subdirectory(filemanager)
+add_subdirectory(dragdrop)
 add_subdirectory(accounts)
 add_subdirectory(bluez)
 add_subdirectory(mpris)
