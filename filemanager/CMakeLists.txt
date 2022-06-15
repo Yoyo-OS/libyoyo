@@ -20,7 +20,6 @@ set(SCREEN_SRCS
     dialogs/createfolderdialog.cpp
     dialogs/filepropertiesdialog.cpp
     dialogs/openwithdialog.cpp
-    desktop/desktopsettings.cpp
     cio/cfilejob.cpp
     cio/cfilesizejob.cpp
     plugin.cpp

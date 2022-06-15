@@ -10,7 +10,6 @@
 #include "helper/datehelper.h"
 #include "helper/fm.h"
 #include "helper/shortcut.h"
-#include "desktop/desktopsettings.h"
 
 class QmlPlugins : public QQmlExtensionPlugin
 {
@@ -31,7 +30,6 @@ public:
         qmlRegisterType<Positioner>(uri, 1, 0, "Positioner");
         qmlRegisterType<RubberBand>(uri, 1, 0, "RubberBand");
         qmlRegisterType<ItemViewAdapter>(uri, 1, 0, "ItemViewAdapter");
-        qmlRegisterType<DesktopSettings>(uri, 1, 0, "DesktopSettings");
         qmlRegisterType<Fm>(uri, 1, 0, "Fm");
         qmlRegisterType<ShortCut>(uri, 1, 0, "ShortCut");
     }
