@@ -1,0 +1,3 @@
+module Yoyo.FileManager
+
+plugin yoyofilemanager_qmlplugins
