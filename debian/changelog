@@ -1,3 +1,9 @@
+libyoyo (0.9) UNRELEASED; urgency=high
+
+  * Initial release (YoyoOS)  <support@yoyoos.com>
+
+ -- YoyoOS Packaging Team <support@yoyoos.com>  Wed, 22 Jun 2022 23:52:49 +0800
+
 libyoyo (0.8-1) UNRELEASED; urgency=high
 
   * Initial release (YoyoOS)  <support@yoyoos.com>

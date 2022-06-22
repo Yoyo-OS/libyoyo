@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *********************************************************************/
 
 #include "outputmodel.h"
-
+#include <QProcess>
 #include "./common/utils.h"
 
 #include "confighandler.h"
@@ -425,11 +425,24 @@ bool OutputModel::setRotation(int outputIndex, KScreen::Output::Rotation rotatio
     if (output.ptr->rotation() == rotation) {
         return false;
     }
-    output.ptr->setRotation(rotation);
+    if(rotation == KScreen::Output::None)
+    {
+        QProcess::startDetached("xrandr --screen "+ QString::number(outputIndex) + " -o normal");
+    }else if(rotation == KScreen::Output::Left)
+    {
+        QProcess::startDetached("xrandr --screen "+ QString::number(outputIndex) + " -o left");
+    }else if(rotation == KScreen::Output::Inverted)
+    {
+        QProcess::startDetached("xrandr --screen "+ QString::number(outputIndex) + " -o inverted");
+    }else if(rotation == KScreen::Output::Right)
+    {
+        QProcess::startDetached("xrandr --screen "+ QString::number(outputIndex) + " -o right");
+    }
+    //output.ptr->setRotation(rotation);
 
-    QModelIndex index = createIndex(outputIndex, 0);
-    Q_EMIT dataChanged(index, index, {RotationRole, SizeRole});
-    Q_EMIT sizeChanged();
+    //QModelIndex index = createIndex(outputIndex, 0);
+    //Q_EMIT dataChanged(index, index, {RotationRole, SizeRole});
+    //Q_EMIT sizeChanged();
     return true;
 
 }
